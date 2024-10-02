@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio generador de tablas</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pulsa para generar las filas y columnas</h1>
+        
+        <div class="controls">
+            <button id="add-row">Añadir fila</button>
+            <button id="remove-row">Eliminar fila</button>
+            <button id="add-column">Añadir columna</button>
+            <button id="remove-column">Eliminar columna</button>
+        </div>
+
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Celda 1</td>
+                    <td>Celda 2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
