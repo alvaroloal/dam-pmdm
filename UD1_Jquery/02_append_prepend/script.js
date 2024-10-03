@@ -1,18 +1,16 @@
 $(document).ready(function () {
+    var i = 1;
+  
     $(document).on("click", "#btn-add-paragraph", function () {
-        // creo un nuevo parrafo con un boton eliminar
-        const newParagraph = $("<p>Lorem ipsum <button class='btn-delete'>Borrar párrafo</button></p>");
-        //muestro nuevo parrafo
-        $("#content").append(newParagraph);
+      $("#content").append(
+        '<p class="row red"><p class="yellow">' +i +' >> Lorem ipsum <button class="btn-delete-paragraph">Delete paragraph</button></p></p>'
+      );
+      i++;
     });
-
-    // para eliminar prrafo
-    $(document).on("click", ".btn-delete", function () {
-        alert("¿Borrar parrafo?")
-        $(this).parent().remove(); 
+  
+    $(document).on("click", ".btn-delete-paragraph", function () {
+      $(this).closest("p .row").remove();
     });
-
-    
   });
 
 
